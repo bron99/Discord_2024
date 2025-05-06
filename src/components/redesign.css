@@ -92,6 +92,15 @@
     border: none;
   }
 
+  .reaction__23977 {
+    background: var(--background-secondary);
+  }
+
+  .icon__24af7 {
+    height: 24px;
+    width: 24px;
+  }
+
   /***************************************************************** SERVERS **********************************************************************/
   .guilds_c48ade {
     padding-top: var(--space-4);
@@ -126,6 +135,11 @@
               &.selected__6e9f8 {
                 border-radius: 15px;
               }
+            }
+
+            > .circleIconButton__5bc7e {
+              border-radius: var(--radius-round);
+              overflow: hidden;
             }
           }
         }
@@ -259,6 +273,34 @@
 
         .channelTextArea__74017 {
           border: none;
+
+          .slateTextArea_ec4baf {
+            margin-left: 0;
+          }
+          
+          .attachButton__0923f {
+            margin-left: var(-space-md);
+
+            svg {
+              height: 24px;
+              width: 24px;
+            }
+          }
+
+          .lottieIcon__5eb9b {
+            height: 24px !important;
+            width: 24px !important;
+          }
+
+          .spriteContainer__04eed {
+            --custom-emoji-sprite-size: 22px !important;
+          }
+
+          .channelAppLauncher_e6e74f .lottieIcon__5eb9b {
+            height: 27px !important;
+            width: 27px !important;
+            margin-top: -1px;
+          }
         }
 
         > .base_b88801 {
