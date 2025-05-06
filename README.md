@@ -11,7 +11,7 @@ Any other settings (i.e., UI density, zoom, font size) were default ones, if cha
 
 # Plugins
 
-The theme should work with any plugins you might use, however some might not work as intended. If you spot any that outright don't work well (whilist working on base discord), let me know and i will try to fix them. Some fixes for BD plugins are already included.
+The theme should work with any plugins you might use, however some might not work as intended. If you spot any that outright don't work well (whilst working on base discord), let me know and i will try to fix them. Some fixes for BD plugins are already included.
 
 # Work in progress
 
