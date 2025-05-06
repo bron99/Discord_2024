@@ -195,6 +195,15 @@
             padding-left: var(--space-sm);
             padding-right: var(--space-sm);
           }
+
+          :is(.timestampInline_c19a55) time[aria-label^="Today at"] {
+            visibility: hidden;
+          }
+        
+          :is(.timestampInline_c19a55) time[aria-label^="Today at"]:before {
+              content: attr(aria-label);
+              visibility: visible;
+          }
         }
 
         > .form_f75fb0 {
