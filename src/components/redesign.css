@@ -402,4 +402,50 @@
   .gameActivityToggleAdded_fd3fb5 .gameActivityToggleButton_fd3fb5 {
     margin-right: 0;
   }
+  
+  /* BD ServerFolders supported v7.3.9 by DevilBro */
+  .folderContentIsOpen_ac0584 .base_c48ade {
+    grid-template-areas:
+    "titleBar titleBar titleBar titleBar"
+    "notice notice notice notice"
+    "guildsList guildsList channelsList page";
+    grid-template-columns: [start] min-content [guildsEnd] min-content [guildsEnd] min-content [channelsEnd] 1fr [end];
+  }
+
+  .folderContentIsOpen_ac0584 .base_c48ade .sidebar_c48ade {
+    grid-template-areas:
+    "guilds guildsFolderList sidebar"
+    "guilds guildsFolderList panels";
+  }
+  
+  .content_ac0584.closed_ac0584 {
+    height: 0;
+  }
+
+  .content_ac0584 .wrapper_cc5dd2 {
+    width: var(--guildbar-avatar-size) !important;
+    height: var(--guildbar-avatar-size) !important;
+
+    > svg {
+      inset: auto;
+      contain: none;
+
+      > foreignObject {
+        mask: none;
+        overflow: visible;
+        x: -4;
+        y: -4;
+
+        > .wrapper__6e9f8 {
+          border-radius: var(--radius-round);
+          overflow: hidden;
+          transition: border-radius 0.2s;
+
+          &.selected__6e9f8 {
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
 }
