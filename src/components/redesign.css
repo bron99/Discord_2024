@@ -6,12 +6,6 @@
   --custom-channel-textarea-text-area-height: 44px;
   --custom-member-list-width: 240px;
   --background-code: var(--background-secondary) !important;
-
-  --custom-button-button-xl-height: 46px;
-  --custom-button-button-lg-height: 40px;
-  --custom-button-button-md-height: 34px;
-  --custom-button-button-sm-height: 28px;
-  --custom-button-button-tn-height: 20px;
 }
 
 .visual-refresh {
@@ -96,11 +90,6 @@
   .button__201d5 {
     border-radius: 3px;
     border: none;
-  }
-
-  .lookFilled__201d5.colorPrimary__201d5 {
-    background-color: var(--bg-overlay-3, var(--background-tertiary));
-    color: var(--text-muted);
   }
 
   /***************************************************************** SERVERS **********************************************************************/
@@ -194,6 +183,10 @@
     .searchBar__35e86 > button {
       justify-content: flex-start;
       padding-left: 6px;
+      background-color: var(--bg-overlay-3, var(--background-tertiary));
+      color: var(--text-muted);
+      height: calc(var(--custom-button-button-sm-height) - 4px);
+      min-height: unset;
       
       .contents__201d5 {
         margin: 0;
@@ -406,16 +399,16 @@
   /* BD ServerFolders supported v7.3.9 by DevilBro */
   .folderContentIsOpen_ac0584 .base_c48ade {
     grid-template-areas:
-    "titleBar titleBar titleBar titleBar"
-    "notice notice notice notice"
-    "guildsList guildsList channelsList page";
+      "titleBar titleBar titleBar titleBar"
+      "notice notice notice notice"
+      "guildsList guildsList channelsList page";
     grid-template-columns: [start] min-content [guildsEnd] min-content [guildsEnd] min-content [channelsEnd] 1fr [end];
   }
 
   .folderContentIsOpen_ac0584 .base_c48ade .sidebar_c48ade {
     grid-template-areas:
-    "guilds guildsFolderList sidebar"
-    "guilds guildsFolderList panels";
+      "guilds guildsFolderList sidebar"
+      "guilds guildsFolderList panels";
   }
   
   .content_ac0584.closed_ac0584 {
