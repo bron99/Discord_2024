@@ -5,8 +5,8 @@
   --custom-app-top-bar-height: 22px;
   --custom-channel-textarea-text-area-height: 44px;
   --custom-member-list-width: 240px;
+  --background-code: var(--background-secondary) !important;
 }
-
 
 .visual-refresh {
   /***************************************************************** LAYOUT ***********************************************************************/
@@ -67,6 +67,17 @@
     &:after {
       display: none;
     }
+  }
+
+  /***************************************************************** GENERAL **********************************************************************/
+  .markup__75297 code {
+    border: 1px solid var(--background-tertiary);
+  }
+
+  .header__13cf1 {
+    font-size: var(--size-12);
+    text-transform: uppercase;
+    line-height: unset;
   }
 
   /***************************************************************** SERVERS **********************************************************************/
@@ -151,6 +162,11 @@
   .sidebarList_c48ade {
     border: 0;
 
+    .header_f37cb1 {
+      border: none;
+      box-shadow: var(--shadow-ledge);
+    }
+
     .scroller__629e4 {
       margin-right: 0;
 
@@ -161,12 +177,6 @@
           .mainContent__29444 {
             flex-direction: row-reverse;
             flex: none;
-      
-            .name__29444 {
-                font-size: var(--size-12);
-                text-transform: uppercase;
-                line-height: unset;
-            }
           }
         }
 
@@ -180,7 +190,12 @@
 
   /***************************************************************** CHAT *************************************************************************/
   .chat_f75fb0 {
-    border: none;
+    border: none !important;
+
+    .title_f75fb0 {
+      border: none;
+      box-shadow: var(--shadow-ledge);
+    }
 
     .content_f75fb0 {
       .chatContent_f75fb0 {
@@ -212,21 +227,36 @@
 
           .channelTextArea__74017 {
             border: none;
-
-            .textArea__74017 {
-              height: var(--custom-channel-textarea-text-area-height) !important;
-            }
           }
 
           > .base_b88801 {
             color: var(--text-normal);
             padding-left: var(--space-xs);
+            font-size: 14px;
           }
         }
       }
 
       .container_c8ffbb {
         border: none;
+
+        .membersGroup_c8ffbb {
+          padding-top: calc(var(--space-xl) + 2px);  /* don't ask me why xd */
+          padding-bottom: 2px;
+        }
+
+        .container__91a9d {
+          border-radius: var(--radius-xs);
+          margin-right: 8px;
+
+          .childContainer__91a9d {
+            padding: 0;
+          }
+
+          .memberInner__5d473 {
+            height: 44px;
+          }
+        }
       }
     }
   }
