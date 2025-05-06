@@ -6,6 +6,7 @@
   --custom-channel-textarea-text-area-height: 44px;
   --custom-member-list-width: 240px;
   --background-code: var(--background-secondary) !important;
+  --chat-input-icon-size: 24px;
 }
 
 .visual-refresh {
@@ -109,6 +110,11 @@
     .stack_dbd263 {
       #guild-list-unread-dms > div {
         height: var(--guildbar-avatar-size) !important; 
+      }
+
+      .guildSeparator__252b6 {
+        height: 2px;
+        background-color: var(--background-modifier-accent);
       }
 
       /* probably should be a better way to do this */
