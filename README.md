@@ -6,7 +6,7 @@ _Discord_2024 was made fully from scratch by me, however it wouldn't be possible
 
 # Discord Appearance/Accessibility Settings
 
-Technically the theme should work for all default themes (Light, Ash, Dark, Onyx, nitro themes are not supported), however it was mostly tested on Ash, as that's the theme I use and had most screenshots of.
+All themes are supported (Light, Ash, Dark, Onyx and custom Nitro ones), however some things might be off. The theme is mainly tested on Ash, as that's the theme I use and have most screenshots/videos of.
 Any other settings (i.e., UI density, zoom, font size) were default ones, if changed they should still work as intended, if any bugs occur please let me know!
 
 # Plugins
