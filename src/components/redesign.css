@@ -491,9 +491,15 @@
         > .wrapper__44b0c.avatar__37e49 {
           width: 32px !important;
           height: 32px !important;
-          > svg {
+          
+          > svg.mask__44b0c {
               width: 39px;
               height: 39px;
+          }
+
+          > svg.avatarDecoration__44b0c {
+            height: 38px;
+            width: 47px;
           }
         }
       }
