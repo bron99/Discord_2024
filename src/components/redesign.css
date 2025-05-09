@@ -348,6 +348,10 @@
             content: attr(aria-label);
             visibility: visible;
         }
+
+        .scrollerSpacer__36d07 {
+          height: var(--discord-2024-custom-scroller-spacer-height);
+        }
       }
 
       > .form_f75fb0 {

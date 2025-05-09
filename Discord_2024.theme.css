@@ -1,8 +1,14 @@
 /**
   * @name Discord_2024
-  * @version 1.0
   * @author @bron99
+  * @version 1.0.1
   * @description Restores discord's 2024 UI
   * @source https://github.com/bron99/Discord_2024
+  * @invite VZYrFfnP25
 */
 @import url("https://bron99.github.io/Discord_2024/src/main.css");
+
+:root {
+  /* Specifies the gap between messages in the chat box and bottom form to type in the messages | DEFAULT: 30px */
+  --discord-2024-custom-scroller-spacer-height: 30px;
+}
