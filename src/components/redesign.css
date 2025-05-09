@@ -280,7 +280,7 @@
       background-color: var(--bg-overlay-selected,var(--background-mod-normal));
       height: calc(var(--custom-button-button-sm-height) - 4px);
       min-height: unset;
-      color: initial;
+      color: var(--text-normal);
       
       .contents__201d5 {
         margin: 0;
