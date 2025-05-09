@@ -40,12 +40,12 @@ This is very much work in progress, there are still a lot of changes that need t
 
 Paste the following in `Settings > Themes`:
 
-- `https://bron99.github.io/Discord_2024/src/main.css`
+- `https://bron99.github.io/Discord_2024/Discord_2024.theme.css`
 
 ## Other
 
 1. Paste the following at **the top** of the CSS file/window:
 
 ```css
-@import url("https://bron99.github.io/Discord_2024/src/main.css");
+@import url("https://bron99.github.io/Discord_2024/Discord_2024.theme.css");
 ```
