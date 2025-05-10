@@ -211,11 +211,6 @@
       }
 
       /* folders */
-
-      .folderPreviewWrapper__48112 {
-        background-color: var(--background-secondary);
-      }
-
       &.folderGuildsList__48112 {
         height: fit-content !important;
       }
