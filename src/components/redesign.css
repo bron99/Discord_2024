@@ -412,6 +412,13 @@
 
     .chatContent_f75fb0 {
       > .messagesWrapper__36d07 {
+        .barButtonAlt__0f481 {
+          background-color: var(--transparent);
+          &:hover {
+            background-color: var(--transparent);
+          }
+        }
+
         > .barBase__0f481 {
           border: none;
           left: var(--space-md);
