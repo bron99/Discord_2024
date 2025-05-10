@@ -343,13 +343,15 @@
       }
     }
 
-    #guild-context-invite-people {
+    #guild-context-invite-people,
+    #channel-context-invite-people {
       .label_c1e9c4 {
         color: var(--text-brand);
       }
     }
 
-    .focused_c1e9c4#guild-context-invite-people {
+    .focused_c1e9c4#guild-context-invite-people,
+    .focused_c1e9c4#channel-context-invite-people {
       .label_c1e9c4 {
         color: white;
       }
@@ -358,7 +360,8 @@
     #message-delete,
     #user-context-kick,
     #user-context-ban,
-    #user-context-timeout {
+    #user-context-timeout,
+    #channel-context-delete-channel {
       .label_c1e9c4 {
         color: var(--text-danger);
       }
@@ -367,7 +370,8 @@
     .focused_c1e9c4#user-context-timeout,
     .focused_c1e9c4#user-context-kick,
     .focused_c1e9c4#user-context-ban,
-    .focused_c1e9c4#message-delete {
+    .focused_c1e9c4#message-delete,
+    .focused_c1e9c4#channel-context-delete-channel {
       background-color: hsl(359deg 58.41% 51.13%);
       border-radius: 2px;
 
