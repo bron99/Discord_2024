@@ -163,95 +163,95 @@
   }
 
   /***************************************************************** SERVERS **********************************************************************/
-  .guilds_c48ade {
-    .stack_dbd263 {
-      padding-top: var(--space-4);
+  .guilds_c48ade .stack_dbd263 {
+    .tutorialContainer__1f388 {
+      padding-top: 4px;
+    }
 
-      #guild-list-unread-dms > div {
-        height: var(--guildbar-avatar-size) !important;
-      }
+    #guild-list-unread-dms > div {
+      height: var(--guildbar-avatar-size) !important;
+    }
 
-      .guildSeparator__252b6 {
-        height: 2px;
-        background-color: var(--background-modifier-accent);
-      }
+    .guildSeparator__252b6 {
+      height: 2px;
+      background-color: var(--background-modifier-accent);
+    }
 
-      /* probably should be a better way to do this */
-      .wrapper_cc5dd2:not(.folderGroup__48112 .wrapper_cc5dd2),
-      .folderGuildsList__48112 .wrapper_cc5dd2 {
-        width: var(--guildbar-avatar-size) !important;
-        height: var(--guildbar-avatar-size) !important;
+    /* probably should be a better way to do this */
+    .wrapper_cc5dd2:not(.folderGroup__48112 .wrapper_cc5dd2),
+    .folderGuildsList__48112 .wrapper_cc5dd2 {
+      width: var(--guildbar-avatar-size) !important;
+      height: var(--guildbar-avatar-size) !important;
 
-        > svg {
-          inset: auto;
-          contain: none;
+      > svg {
+        inset: auto;
+        contain: none;
 
-          > foreignObject {
-            mask: none;
-            overflow: visible;
-            x: -4;
-            y: -4;
-
-            > .wrapper__6e9f8 {
-              border-radius: var(--radius-round);
-              overflow: hidden;
-              transition: border-radius 0.2s;
-
-              &.selected__6e9f8 {
-                border-radius: 15px;
-              }
-            }
-
-            > .circleIconButton__5bc7e {
-              border-radius: var(--radius-round);
-              overflow: hidden;
-            }
-          }
-        }
-      }
-
-      /* folders */
-      &.folderGuildsList__48112 {
-        height: fit-content !important;
-      }
-
-      .folderGroup__48112 {
-        --custom-folder-preview-padding: var(--space-6);
-        --custom-folder-preview-gap: var(--space-4);
-
-        .folderHeader__48112,
-        .folderHeader__48112 > .folderButton__48112 {
-          border-radius: var(--radius-lg);
+        > foreignObject {
+          mask: none;
           overflow: visible;
-        }
+          x: -4;
+          y: -4;
 
-        .folderIcon__48112 > svg {
-          width: 24px;
-          height: 24px;
-        }
-
-        .folderPreview__48112 {
-          gap: var(--custom-folder-preview-gap);
-
-          > .folderPreviewGuildIcon__48112 {
+          > .wrapper__6e9f8 {
             border-radius: var(--radius-round);
+            overflow: hidden;
+            transition: border-radius 0.2s;
+
+            &.selected__6e9f8 {
+              border-radius: 15px;
+            }
+          }
+
+          > .circleIconButton__5bc7e {
+            border-radius: var(--radius-round);
+            overflow: hidden;
           }
         }
       }
+    }
 
-      /* ping/voice icons */
-      .badgeStroke_cc5dd2 {
-        display: none;
+    /* folders */
+    &.folderGuildsList__48112 {
+      height: fit-content !important;
+    }
+
+    .folderGroup__48112 {
+      --custom-folder-preview-padding: var(--space-6);
+      --custom-folder-preview-gap: var(--space-4);
+
+      .folderHeader__48112,
+      .folderHeader__48112 > .folderButton__48112 {
+        border-radius: var(--radius-lg);
+        overflow: visible;
       }
 
-      .lowerBadge_cc5dd2,
-      .upperBadge_cc5dd2 {
-        border: 4px solid;
-        border-radius: var(--radius-round);
-        margin-right: -4px;
-        margin-top: -4px;
-        margin-bottom: -4px;
+      .folderIcon__48112 > svg {
+        width: 24px;
+        height: 24px;
       }
+
+      .folderPreview__48112 {
+        gap: var(--custom-folder-preview-gap);
+
+        > .folderPreviewGuildIcon__48112 {
+          border-radius: var(--radius-round);
+        }
+      }
+    }
+
+    /* ping/voice icons */
+    .badgeStroke_cc5dd2 {
+      display: none;
+    }
+
+    .lowerBadge_cc5dd2,
+    .upperBadge_cc5dd2 {
+      border: 4px solid;
+      border-radius: var(--radius-round);
+      margin-right: -4px;
+      margin-top: -4px;
+      margin-bottom: -4px;
     }
   }
 
@@ -333,7 +333,6 @@
   }
 
   /***************************************************************** CONTEXT *********************************************************************/
-
   .menu_c1e9c4 {
     background-color: var(--background-floating);
     border-radius: 4px 4px 0 0;
@@ -625,7 +624,7 @@
     margin-right: 0;
   }
 
-  /* BD ServerFolders supported v7.3.9 by DevilBro */
+  /* BD ServerFolders supported v7.4.1 by DevilBro */
   .folderContentIsOpen_ac0584 .base_c48ade {
     grid-template-areas:
       "titleBar titleBar titleBar titleBar"
@@ -638,6 +637,10 @@
     grid-template-areas:
       "guilds guildsFolderList sidebar"
       "guilds guildsFolderList panels";
+  }
+
+  .content_ac0584 {
+    padding-top: 4px;
   }
 
   .content_ac0584.closed_ac0584 {
