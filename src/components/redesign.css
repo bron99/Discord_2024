@@ -211,6 +211,11 @@
       }
 
       /* folders */
+
+      .folderPreviewWrapper__48112 {
+        background-color: var(--background-secondary);
+      }
+
       &.folderGuildsList__48112 {
         height: fit-content !important;
       }
@@ -222,6 +227,7 @@
         .folderHeader__48112,
         .folderHeader__48112 > .folderButton__48112 {
           border-radius: var(--radius-lg);
+          overflow: visible;
         }
 
         .folderIcon__48112 > svg {
