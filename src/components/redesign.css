@@ -330,6 +330,13 @@
     }
   }
 
+  /* edit server roles incorrect background color */
+  .customContainer__23e6b, /* background color for server members and audit log */
+  .titleContainer_e29cd7,
+  .header_c6bf1b {
+    background-color: var(--background-base-low);
+  }
+
   /***************************************************************** CONTEXT *********************************************************************/
 
   .menu_c1e9c4 {
