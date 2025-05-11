@@ -380,11 +380,11 @@
     }
 
     #message-delete,
-    /* #message-report, */
+    #message-report,
     #user-context-kick,
     #user-context-ban,
     #user-context-timeout,
-    /* #user-context-block, */
+    #user-context-block,
     #channel-context-delete-channel,
     #guild-context-leave-guild {
       .label_c1e9c4 {
@@ -395,9 +395,9 @@
     .focused_c1e9c4#user-context-timeout,
     .focused_c1e9c4#user-context-kick,
     .focused_c1e9c4#user-context-ban,
-    /* .focused_c1e9c4#user-context-block, */
+    .focused_c1e9c4#user-context-block,
     .focused_c1e9c4#message-delete,
-    /* .focused_c1e9c4#message-report, */
+    .focused_c1e9c4#message-report,
     .focused_c1e9c4#channel-context-delete-channel,
     .focused_c1e9c4#guild-context-leave-guild {
       background-color: var(--info-danger-foreground);
