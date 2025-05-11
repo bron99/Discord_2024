@@ -418,8 +418,13 @@
   }
 
   /***************************************************************** CHAT *************************************************************************/
+  /* chat/forum post/friends/library/nitro/shop */
   .chat_f75fb0,
-  .container__01ae2 {
+  .container__01ae2,
+  .container__133bf,
+  .container_ad5cdf,
+  .homeWrapper__0920e,
+  .shop__6db1d {
     border: none !important;
 
     .title_f75fb0,
