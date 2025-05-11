@@ -343,6 +343,10 @@
       background-color: var(--bg-base-tertiary);
     }
 
+    .focused_f563df {
+      background-color: var(--bg-base-secondary);
+    }
+
     .label_c1e9c4 {
       color: var(--text-muted-on-default);
     }
@@ -354,6 +358,11 @@
       .label_c1e9c4 {
         color: white;
       }
+    }
+
+    .colorDanger_c1e9c4 {
+      /* red icons */
+      color: var(--info-danger-foreground);
     }
 
     #guild-context-invite-people,
@@ -371,23 +380,27 @@
     }
 
     #message-delete,
+    /* #message-report, */
     #user-context-kick,
     #user-context-ban,
     #user-context-timeout,
+    /* #user-context-block, */
     #channel-context-delete-channel,
     #guild-context-leave-guild {
       .label_c1e9c4 {
-        color: var(--text-danger);
+        color: var(--info-danger-foreground);
       }
     }
 
     .focused_c1e9c4#user-context-timeout,
     .focused_c1e9c4#user-context-kick,
     .focused_c1e9c4#user-context-ban,
+    /* .focused_c1e9c4#user-context-block, */
     .focused_c1e9c4#message-delete,
+    /* .focused_c1e9c4#message-report, */
     .focused_c1e9c4#channel-context-delete-channel,
     .focused_c1e9c4#guild-context-leave-guild {
-      background-color: hsl(359deg 58.41% 51.13%);
+      background-color: var(--info-danger-foreground);
       border-radius: 2px;
 
       .label_c1e9c4 {
