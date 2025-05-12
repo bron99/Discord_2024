@@ -34,6 +34,14 @@
   }
 
   /***************************************************************** LAYOUT ***********************************************************************/
+  /* remove top bar on web/linux */
+  &.platform-web,
+  &.platform-linux {
+    .base_c48ade {
+      --custom-app-top-bar-height: 0px;
+    }
+  }
+  
   /* top bar */
   .base_c48ade > .bar_c38106 {
     padding-left: 0;
@@ -55,18 +63,18 @@
     > .trailing_c38106 {
       z-index: 102;
 
+      /* TODO: move update icon */
+
       > .recentsIcon_c99c29 {
         position: absolute;
-        top: 30px;
-        right: calc(
-          (var(--space-md) - 4px) * 2 + 28px
-        ); /*TODO: change this abomination */
+        top: calc(var(--custom-app-top-bar-height) + var(--space-8));
+        right: calc(32px + var(--space-xs) * 2 + 4px);
       }
 
       > .anchor_edefb8 {
         position: absolute;
-        top: 30px;
-        right: calc(var(--space-md) - 4px);
+        top: calc(var(--custom-app-top-bar-height) + var(--space-8));
+        right: calc(var(--space-xs) + 4px);
 
         svg {
           height: 22px;
@@ -433,7 +441,29 @@
       box-shadow: var(--shadow-ledge);
 
       .toolbar__9293f {
-        margin-right: 95px;
+        margin-right: calc(32px * 2 + 12px + var(--space-xs));  /* TODO: account for update icon */
+
+        .inviteToolbar__133bf,
+        .libraryFilter__3fb48 {
+          padding-right: 0;
+          margin-right: var(--spacing-4);
+        }
+
+        .searchBar__97492 {
+          height: 24px;
+          width: 144px;
+          padding: 0 2px;
+          border-radius: var(--radius-xs);
+          border: none;
+          background: var(--bg-overlay-3, var(--background-tertiary));
+        }
+      }
+    }
+
+    /* forum post open on sidebar */
+    &.threadSidebarOpen_f75fb0 {
+      .toolbar__9293f {
+        margin-right: 0;
       }
     }
 
