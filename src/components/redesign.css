@@ -661,6 +661,13 @@
     }
   }
 
+  /* pinned messages */
+  .messagesPopoutWrap__45690 {
+    .markup__75297 code {
+      background-color: var(--background-secondary);
+    }
+  }
+
   /***************************************************************** PANELS ***********************************************************************/
   .panels_c48ade {
     background-color: var(--background-secondary-alt);
