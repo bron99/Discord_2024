@@ -41,7 +41,7 @@
       --custom-app-top-bar-height: 0px;
     }
   }
-  
+
   /* top bar */
   .base_c48ade > .bar_c38106 {
     padding-left: 0;
@@ -89,7 +89,8 @@
   }
 
   /* only if update exists, move toolbar, there should be a better way to do this i think */
-  .base_c48ade:has(.bar_c38106 > .trailing_c38106 > .button__85643) .toolbar__9293f {
+  .base_c48ade:has(.bar_c38106 > .trailing_c38106 > .button__85643)
+    .toolbar__9293f {
     margin-right: calc(32px * 3 + var(--space-xs) * 3 + 4px);
   }
 
@@ -615,6 +616,48 @@
         background-repeat: no-repeat;
         background-size: contain;
       }
+    }
+  }
+
+  /* gif, stickers and emoji menus */
+  .contentWrapper__08434 {
+    background-color: var(--background-secondary);
+
+    .header_fed6d3,
+    .header__8ef02,
+    .header_c0e32c {
+      background-color: var(--background-secondary);
+      border-bottom: 1px solid var(--bg-surface-overlay);
+      border-radius: 0;
+    }
+
+    .listWrapper_c656ac {
+      background-color: var(--background-secondary);
+    }
+
+    .wrapper__14245 {
+      background-color: inherit;
+    }
+
+    .wrapper__4e6ce {
+      background-color: var(--background-secondary-alt);
+    }
+
+    .categoryList_c0e32c,
+    .categoryList__3ad28 {
+      top: 45px;
+    }
+
+    .searchBar_fed6d3,
+    .medium_a45028 {
+      border: none;
+      border-radius: 4px;
+      height: 32px;
+      align-items: center;
+    }
+
+    .inspector_aeaaeb {
+      background-color: var(--background-secondary-alt);
     }
   }
 
