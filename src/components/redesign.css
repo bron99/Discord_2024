@@ -63,8 +63,6 @@
     > .trailing_c38106 {
       z-index: 102;
 
-      /* TODO: move update icon */
-
       > .recentsIcon_c99c29 {
         position: absolute;
         top: calc(var(--custom-app-top-bar-height) + var(--space-8));
@@ -81,7 +79,18 @@
           width: 22px;
         }
       }
+
+      > .button__85643 {
+        position: absolute;
+        top: calc(var(--custom-app-top-bar-height) + var(--space-8));
+        right: calc(32px * 2 + var(--space-xs) * 3 + 4px);
+      }
     }
+  }
+
+  /* only if update exists, move toolbar, there should be a better way to do this i think */
+  .base_c48ade:has(.bar_c38106 > .trailing_c38106 > .button__85643) .toolbar__9293f {
+    margin-right: calc(32px * 3 + var(--space-xs) * 3 + 4px);
   }
 
   /* placement of elements on left sidebar (servers/channels/panels) */
@@ -441,7 +450,7 @@
       box-shadow: var(--shadow-ledge);
 
       .toolbar__9293f {
-        margin-right: calc(32px * 2 + 12px + var(--space-xs));  /* TODO: account for update icon */
+        margin-right: calc(32px * 2 + var(--space-xs) * 2 + 4px);
 
         .inviteToolbar__133bf,
         .libraryFilter__3fb48 {
