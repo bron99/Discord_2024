@@ -668,6 +668,13 @@
     }
   }
 
+  /* mp3 messages */
+  .wrapperAudio_cf09d8 {
+    background-color: var(--background-base-lowest);
+    border-color: var(--bg-base-tertiary);
+    /* border-radius: var(--radius-xs); unsure if this is needed */
+  }
+
   /***************************************************************** PANELS ***********************************************************************/
   .panels_c48ade {
     background-color: var(--background-secondary-alt);
