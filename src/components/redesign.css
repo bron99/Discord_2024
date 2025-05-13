@@ -42,6 +42,18 @@
     }
   }
 
+  /* microphone access denied popup */
+  .root__49fc1 {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: var(--radius-xs);
+
+    .footer__49fc1 {
+      background-color: inherit;
+      border-radius: var(--radius-xs);
+    }
+  }
+
   /* top bar */
   .base_c48ade > .bar_c38106 {
     padding-left: 0;
