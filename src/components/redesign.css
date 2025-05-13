@@ -696,6 +696,56 @@
     /* border-radius: var(--radius-xs); unsure if this is needed */
   }
 
+  /* dm call controls */
+  .bottomControls_bfe55a {
+    border: none;
+
+    .button__201d5 {
+      border: none;
+      border-radius: 50%;
+      background-color: var(--background-secondary-alt);
+      width: 56px;
+      height: 56px;
+      margin-bottom: -5px;
+    }
+
+    .disconnect_f1ceac {
+      background-color: var(--info-danger-foreground);
+    }
+
+    .buttonSection__1405b {
+      background: transparent;
+      padding: 0;
+      gap: 12px;
+
+      .attachedCaretButtonContainer_f1ceac {
+        width: 56px;
+
+        .controlIcon_f1ceac {
+          width: 26px;
+          height: 26px;
+        }
+
+        .contextMenuNubExperiment_f1ceac.attachedCaret_f1ceac {
+          position: relative;
+          height: 20px;
+          width: 20px;
+          padding: 0;
+          border: 4px solid var(--black);
+          border-radius: 50%;
+          background-color: var(--background-secondary-alt);
+          right: 24px;
+          bottom: -21px;
+        }
+
+        .colorable_f1ceac.redGlow_f1ceac {
+          background-color: var(--background-secondary-alt);
+          color: inherit;
+        }
+      }
+    }
+  }
+
   /***************************************************************** PANELS ***********************************************************************/
   .panels_c48ade {
     background-color: var(--background-secondary-alt);
