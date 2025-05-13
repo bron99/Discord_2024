@@ -479,6 +479,13 @@
           border: none;
           background: var(--bg-overlay-3, var(--background-tertiary));
         }
+        
+        .open__97492,
+        .focused__97492 {
+          .searchBar__97492 {
+            width: 281px;
+          }
+        }
       }
     }
 
