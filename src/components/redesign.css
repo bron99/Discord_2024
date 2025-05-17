@@ -368,7 +368,8 @@
       height: 24px;
     }
 
-    .scroller__629e4 {
+    .scroller__629e4,
+    .scroller__99e7c {
       margin-right: 0;
 
       .content__99f8c {
@@ -382,7 +383,9 @@
         }
 
         .container_e45859,
-        .link__2ea32 {
+        .channel__972a0,
+        .link__2ea32,
+        .link__972a0 {
           border-radius: var(--radius-xs);
         }
       }
