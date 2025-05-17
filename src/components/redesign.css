@@ -387,6 +387,10 @@
         }
       }
     }
+
+    .scroller__99e7c {
+      margin-bottom: unset;
+    }
   }
 
   /* edit server roles incorrect background color */
@@ -860,6 +864,8 @@
 
       > .avatarWrapper__37e49 {
         margin-right: var(--space-xs);
+        padding: var(--space-4);
+        border-radius: var(--radius-xs);
 
         > .wrapper__44b0c.avatar__37e49 {
           width: 32px !important;
