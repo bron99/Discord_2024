@@ -520,9 +520,19 @@
           border: none;
           background: var(--bg-overlay-3, var(--background-tertiary));
 
-          .searchFilter_bd8186,
+          .DraftEditor-root {
+            padding: 0;
+          }
+
+          .searchFilter_bd8186 {
+            height: auto;
+            border-radius: 2px 0 0 2px;
+            padding: 0 2px;
+          }
           .searchAnswer_bd8186 {
-            height: 20px;
+            height: auto;
+            border-radius: 0 2px 2px 0;
+            padding: 0 2px;
           }
         }
 
