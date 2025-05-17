@@ -102,6 +102,13 @@
     }
   }
 
+  /* search context menu (top search bar active) */
+  .container__55c99 {
+    background-color: var(--background-floating);
+    border: 1px solid var(--background-accent);
+    border-radius: var(--radius-xs);
+  }
+
   /* only if update exists, move toolbar, there should be a better way to do this i think */
   .base_c48ade:has(.bar_c38106 > .trailing_c38106 > .button__85643)
     .toolbar__9293f {
@@ -192,7 +199,7 @@
   .notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,
   .notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
     color: var(--interactive-active);
-    font-weight: var(--font-weight-semibold-1x-light-theme, 500)
+    font-weight: var(--font-weight-semibold-1x-light-theme, 500);
   }
 
   /* reactions on messages */
@@ -499,14 +506,19 @@
         }
 
         .searchBar__97492 {
-          height: 24px;
+          height: 26px;
           width: 144px;
           padding: 0 2px;
           border-radius: var(--radius-xs);
           border: none;
           background: var(--bg-overlay-3, var(--background-tertiary));
+
+          .searchFilter_bd8186,
+          .searchAnswer_bd8186 {
+            height: 20px;
+          }
         }
-        
+
         .open__97492,
         .focused__97492 {
           .searchBar__97492 {
@@ -598,6 +610,14 @@
           padding-left: var(--space-xs);
           font-size: 14px;
         }
+      }
+    }
+
+    /* search results container */
+    .searchResultsWrap_a9e706 {
+      .item_b3f026,
+      .side_b3f026 {
+        line-height: 20px;
       }
     }
 
