@@ -283,6 +283,7 @@
     .folderGroup__48112 {
       --custom-folder-preview-padding: var(--space-6);
       --custom-folder-preview-gap: var(--space-4);
+      --custom-folder-color: #5865F2; /* might not be accurate */
 
       .folderHeader__48112,
       .folderHeader__48112 > .folderButton__48112 {
