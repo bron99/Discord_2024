@@ -575,11 +575,13 @@
 
         :is(.timestampInline_c19a55) time[aria-label^="Today at"] {
           visibility: hidden;
+          font-size: 0;
         }
 
         :is(.timestampInline_c19a55) time[aria-label^="Today at"]:before {
           content: attr(aria-label);
           visibility: visible;
+          font-size: 0.75rem !important;
         }
 
         .scrollerSpacer__36d07 {
