@@ -3414,10 +3414,10 @@
   --button-positive-background-disabled: var(--green-430);
   --button-positive-background-hover: var(--green-530);
   --button-positive-border: hsl(var(--white-500-hsl)/0);
-  --button-secondary-background: var(--primary-430);
-  --button-secondary-background-active: var(--primary-530);
-  --button-secondary-background-disabled: var(--primary-430);
-  --button-secondary-background-hover: var(--primary-500);
+  --button-secondary-background: var(--primary-230);
+  --button-secondary-background-active: var(--primary-330);
+  --button-secondary-background-disabled: var(--primary-230);
+  --button-secondary-background-hover: var(--primary-300);
   --button-secondary-text: var(--white-500);
   --button-transparent-background: hsl(var(--primary-400-hsl)/0.01);
   --button-transparent-background-active: hsl(var(--primary-400-hsl)/0.25);
