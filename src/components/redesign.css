@@ -100,6 +100,20 @@
         right: calc(32px * 2 + var(--space-xs) * 3 + 4px);
       }
     }
+
+    > .trailing_c38106:has(> :nth-child(3).button__85643) {
+      > .recentsIcon_c99c29 {
+        right: calc(32px * 2 + var(--space-xs) * 3 + 4px);
+      }
+
+      > .anchor_edefb8 {
+        right: calc(32px + var(--space-xs) * 2 + 4px);
+      }
+
+	  > .button__85643 {
+		right: calc(var(--space-xs) + 4px);
+	  }
+    }
   }
 
   /* search context menu (top search bar active) */
