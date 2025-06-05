@@ -83,31 +83,23 @@
         right: calc(32px + var(--space-xs) * 2 + 4px);
 
         svg.svg__2338f {
-          height: 22px;
-          width: 22px;
+          height: 24px;
+          width: 24px;
           overflow: visible;
 
-          foreignObject {
-            x: 0;
-            y: 0;
-            width: 22px;
-            height: 22px;
-            overflow: visible;
-
-            svg.icon__9293f {
-              width: 22px;
-              height: 22px;
-            }
-          }
+          svg.icon__9293f {
+		    width: 20px;
+		    height: 20px;
+		  }
         }
 
         .iconBadge__9293f {
-          height: 12px;
-          width: 12px;
+          height: 9px;
+          width: 9px;
         }
 
         .iconBadgeBottom__9293f {
-          --custom-icon-offset: calc((var(--chat-input-icon-size) - 18px) / 2)
+          --custom-icon-offset: calc((var(--chat-input-icon-size) - 15px) / 2)
         }
       }
 
