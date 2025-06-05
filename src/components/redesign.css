@@ -110,9 +110,9 @@
         right: calc(32px + var(--space-xs) * 2 + 4px);
       }
 
-	  > .button__85643 {
-		right: calc(var(--space-xs) + 4px);
-	  }
+      > .button__85643 {
+        right: calc(var(--space-xs) + 4px);
+      }
     }
   }
 
