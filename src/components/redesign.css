@@ -3,6 +3,7 @@
   --custom-guild-list-padding: var(--space-sm);
   --custom-channel-header-height: 48px;
   --custom-app-top-bar-height: 22px;
+  --custom-app-notice-bar-height: 42px;
   --custom-channel-textarea-text-area-height: 44px;
   --custom-member-list-width: 240px;
   --background-code: var(--background-secondary) !important;
@@ -113,6 +114,23 @@
   .base_c48ade:has(.bar_c38106 > .trailing_c38106 > .button__85643)
     .toolbar__9293f {
     margin-right: calc(32px * 3 + var(--space-xs) * 3 + 4px);
+  }
+
+  /* only if a notice bar exists, move trailing icons to account for dismiss button */
+  .base_c48ade:has(.notice__6e2b9) {
+    .trailing_c38106 {
+      > .recentsIcon_c99c29 {
+        top: calc(var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) + var(--space-4));
+      }
+
+      > .anchor_edefb8 {
+        top: calc(var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) + var(--space-4));
+      }
+
+      > .button__85643 {
+        top: calc(var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) + var(--space-4));
+      }
+    }
   }
 
   /* placement of elements on left sidebar (servers/channels/panels) */
