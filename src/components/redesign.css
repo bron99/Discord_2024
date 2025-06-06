@@ -3,7 +3,7 @@
   --custom-guild-list-padding: var(--space-sm);
   --custom-channel-header-height: 48px;
   --custom-app-top-bar-height: 22px;
-  --custom-app-notice-bar-height: 0px;
+  --custom-app-notice-bar-height: 38px;
   --custom-channel-textarea-text-area-height: 44px;
   --custom-member-list-width: 240px;
   --background-code: var(--background-secondary) !important;
@@ -55,9 +55,9 @@
     }
   }
 
-  /* only if a notice bar exists, give the notice bar variable its height value */
-  .base_c48ade:has(.notice__6e2b9) {
-    --custom-app-notice-bar-height: 38px;
+  /* if a notice bar doesn't exists, remove the notice bar variable's value */
+  .base_c48ade:not(:has(.notice__6e2b9)) {
+    --custom-app-notice-bar-height: 0px;
   }
 
   /* top bar */
