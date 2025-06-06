@@ -55,7 +55,7 @@
     }
   }
 
-  /* only if a notice bar exists, give the noticebar height */
+  /* only if a notice bar exists, give the notice bar variable its height value */
   .base_c48ade:has(.notice__6e2b9) {
     --custom-app-notice-bar-height: 38px;
   }
