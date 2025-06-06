@@ -57,7 +57,7 @@
 
   /* only if a notice bar exists, give the noticebar height */
   .base_c48ade:has(.notice__6e2b9) {
-	--custom-app-notice-bar-height: 38px;
+    --custom-app-notice-bar-height: 38px;
   }
 
   /* top bar */
