@@ -3,6 +3,7 @@
   --custom-guild-list-padding: var(--space-sm);
   --custom-channel-header-height: 48px;
   --custom-app-top-bar-height: 22px;
+  --custom-app-notice-bar-height: 38px;
   --custom-channel-textarea-text-area-height: 44px;
   --custom-member-list-width: 240px;
   --background-code: var(--background-secondary) !important;
@@ -54,6 +55,11 @@
     }
   }
 
+  /* if a notice bar doesn't exists, remove the notice bar variable's value */
+  .base_c48ade:not(:has(.notice__6e2b9)) {
+    --custom-app-notice-bar-height: 0px;
+  }
+
   /* top bar */
   .base_c48ade > .bar_c38106 {
     padding-left: 0;
@@ -79,13 +85,13 @@
 
       > .recentsIcon_c99c29 {
         position: absolute;
-        top: calc(var(--custom-app-top-bar-height) + var(--space-8));
+        top: calc(var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) + var(--space-8));
         right: calc(32px + var(--space-xs) * 2 + 4px);
       }
 
       > .anchor_edefb8 {
         position: absolute;
-        top: calc(var(--custom-app-top-bar-height) + var(--space-8));
+        top: calc(var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) + var(--space-8));
         right: calc(var(--space-xs) + 4px);
 
         svg {
@@ -96,7 +102,7 @@
 
       > .button__85643 {
         position: absolute;
-        top: calc(var(--custom-app-top-bar-height) + var(--space-8));
+        top: calc(var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) + var(--space-8));
         right: calc(32px * 2 + var(--space-xs) * 3 + 4px);
       }
     }
