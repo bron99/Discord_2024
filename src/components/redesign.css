@@ -975,9 +975,9 @@
     }
   }
 
-  /* VC Settings button fix for light theme */
+  /* VC Settings button text color fix */
   .vc-settings-quickActions-pill {
-	color: var(--button-secondary-text);
+    color: var(--button-secondary-text);
   }
 }
 
