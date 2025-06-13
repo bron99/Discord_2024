@@ -974,4 +974,25 @@
       }
     }
   }
+
+  /* VC Settings button fix for light theme */
+  .vc-settings-quickActions-pill {
+	color: var(--button-secondary-text);
+  }
+}
+
+/* Theme button color reset fix */
+.side_b3f026 .themed_b3f026.item_b3f026:hover:not(.disabled_b3f026),
+.topPill_b3f026 .themed_b3f026.item_b3f026:hover:not(.disabled_b3f026) {
+  background-color: var(--background-modifier-hover) !important;
+}
+
+.side_b3f026 .themed_b3f026.item_b3f026:active:not(.disabled_b3f026),
+.topPill_b3f026 .themed_b3f026.item_b3f026:active:not(.disabled_b3f026) {
+  background-color: var(--background-modifier-active) !important;
+}
+
+.side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026,
+.topPill_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 {
+  background-color: var(--background-modifier-selected) !important;
 }
