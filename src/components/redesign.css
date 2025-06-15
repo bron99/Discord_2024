@@ -510,7 +510,21 @@
         .inviteToolbar__133bf,
         .libraryFilter__3fb48 {
           padding-right: 0;
-          margin-right: var(--spacing-4);
+          margin-right: var(--space-4);
+        }
+
+        .inviteToolbar__133bf {
+          position: relative;
+          padding-right: 12px;
+          &::after {
+            content: "";
+            position: absolute;
+            top: var(--space-4);
+            right: 0;
+            width: 1px;
+            height: var(--space-24);
+            background-color: var(--border-subtle);
+          }
         }
 
         .searchBar__97492 {
@@ -541,6 +555,35 @@
         .focused__97492 {
           .searchBar__97492 {
             width: 281px;
+          }
+        }
+      }
+    }
+
+    /* top bar on full friends list page, title area in servers etc */
+    .upperContainer__9293f {
+      .children__9293f:has(.dot__9293f) {
+        /* remove the dot on the friend's list top bar */
+        .dot__9293f {
+          display: none;
+        }
+
+        .tabBar__133bf {
+          display: flex;
+          align-items: center;
+
+          &::before {
+            content: "";
+            display: block;
+            border-left: 1px solid var(--border-subtle);
+            height: var(--space-24);
+            margin-inline: var(--space-4);
+          }
+
+          .item__133bf {
+            min-height: 28px;
+            height: 28px;
+            padding: 2px 8px;
           }
         }
       }
