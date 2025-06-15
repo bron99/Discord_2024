@@ -994,6 +994,21 @@
       &.selected_b3f026 {
         background-color: var(--background-modifier-selected);
       }
+
+	  &.addFriend__133bf {
+        background-color: var(--status-positive-background);
+        color: var(--status-positive-text);
+
+		&:hover {
+          background-color: var(--status-positive-background);
+          color: var(--status-positive-text);
+		}
+
+        &[aria-selected=true] {
+          background-color: transparent;
+          color: var(--text-positive);
+        }
+      }
     }
   }
 
