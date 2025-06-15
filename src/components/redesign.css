@@ -516,6 +516,7 @@
         .inviteToolbar__133bf {
           position: relative;
           padding-right: 12px;
+
           &::after {
             content: "";
             position: absolute;
