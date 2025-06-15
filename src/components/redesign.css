@@ -568,21 +568,28 @@
           display: none;
         }
 
+        .titleWrapper__9293f {
+          position: relative;
+          padding-right: 12px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: -2px;
+            right: 0;
+            width: 1px;
+            height: var(--space-24);
+            background-color: var(--border-subtle);
+          }
+        }
+
         .tabBar__133bf {
           display: flex;
           align-items: center;
 
-          &::before {
-            content: "";
-            display: block;
-            border-left: 1px solid var(--border-subtle);
-            height: var(--space-24);
-            margin-inline: var(--space-4);
-          }
-
           .item__133bf {
-            min-height: 28px;
-            height: 28px;
+            min-height: 24px;
+            height: 24px;
             padding: 2px 8px;
           }
         }
