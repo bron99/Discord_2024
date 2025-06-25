@@ -125,9 +125,9 @@
   .sidebar_c48ade {
     display: grid;
     grid-template-areas:
+      "guilds notice"
       "guilds sidebar"
       "guilds panels";
-    grid-template-rows: [start] 1fr [panelsStart] min-content [end];
 
     > .guilds_c48ade {
       grid-area: guilds;
@@ -932,49 +932,42 @@
   }
 
   /* BD ServerFolders supported v7.4.1 by DevilBro */
-  .folderContentIsOpen_ac0584 .base_c48ade {
-    grid-template-areas:
-      "titleBar titleBar titleBar titleBar"
-      "notice notice notice notice"
-      "guildsList guildsList channelsList page";
-    grid-template-columns: [start] min-content [guildsEnd] min-content [guildsEnd] min-content [channelsEnd] 1fr [end];
-  }
-
   .folderContentIsOpen_ac0584 .base_c48ade .sidebar_c48ade {
     grid-template-areas:
+      "guilds guildsFolderList notice"
       "guilds guildsFolderList sidebar"
       "guilds guildsFolderList panels";
   }
 
   .content_ac0584 {
     margin-top: 4px;
-  }
 
-  .content_ac0584.closed_ac0584 {
-    display: none;
-  }
+    &.closed_ac0584 {
+      display: none;
+    }
 
-  .content_ac0584 .wrapper_cc5dd2 {
-    width: var(--guildbar-avatar-size) !important;
-    height: var(--guildbar-avatar-size) !important;
+    .wrapper_cc5dd2 {
+      width: var(--guildbar-avatar-size) !important;
+      height: var(--guildbar-avatar-size) !important;
 
-    > svg {
-      inset: auto;
-      contain: none;
+      > svg {
+        inset: auto;
+        contain: none;
 
-      > foreignObject {
-        mask: none;
-        overflow: visible;
-        x: -4;
-        y: -4;
+        > foreignObject {
+          mask: none;
+          overflow: visible;
+          x: -4;
+          y: -4;
 
-        > .wrapper__6e9f8 {
-          border-radius: var(--radius-round);
-          overflow: hidden;
-          transition: border-radius 0.2s;
+          > .wrapper__6e9f8 {
+            border-radius: var(--radius-round);
+            overflow: hidden;
+            transition: border-radius 0.2s;
 
-          &.selected__6e9f8 {
-            border-radius: 15px;
+            &.selected__6e9f8 {
+              border-radius: 15px;
+            }
           }
         }
       }
