@@ -675,7 +675,7 @@
 
     /* hover menu/quick menu */
     .popoverReactionHoverBar_f84418 {
-      background-color: var(--background-secondary);
+      background-color: var(--background-secondary, var(--background-nested-floating));
     }
   }
 
