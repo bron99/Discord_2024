@@ -214,6 +214,10 @@
     background: var(--background-secondary);
   }
 
+  .reactionMe__23977 {
+    background-color: var(--message-reacted-background);
+  }
+
   .icon__24af7 {
     height: 24px;
     width: 24px;
