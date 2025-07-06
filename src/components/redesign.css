@@ -636,7 +636,7 @@
         }
 
         > .base_b88801 {
-          color: var(--text-normal);
+          color: var(--text-normal, var(--text-secondary));
           padding-left: var(--space-xs);
           font-size: 14px;
         }
