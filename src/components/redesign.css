@@ -935,7 +935,7 @@
     margin-right: 0;
   }
 
-  /* BD ServerFolders supported v7.4.1 by DevilBro */
+  /* BD ServerFolders supported v7.4.2 by DevilBro */
   .folderContentIsOpen_ac0584 .base_c48ade .sidebar_c48ade {
     grid-template-areas:
       "guilds guildsFolderList notice"
@@ -975,6 +975,22 @@
           }
         }
       }
+    }
+  }
+
+  /* Vencord BetterFolders by Juby210, AutumnVN and Nuckyz*/
+  .vc-betterFolders-sidebar-grid.base_c48ade .sidebar_c48ade {
+    grid-template-areas: 
+        "guilds betterFoldersSidebar notice"
+        "guilds betterFoldersSidebar sidebar"
+        "guilds betterFoldersSidebar panels";
+  }
+
+  .vc-betterFolders-sidebar .wrapper_ef3116 {
+    margin-bottom: 0;
+
+    .folderGuildsList__48112>:first-child {
+      margin-top: 4px;
     }
   }
 }

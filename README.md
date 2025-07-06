@@ -11,7 +11,12 @@ Any other settings (i.e., UI density, zoom, font size) were default ones, if cha
 
 # Plugins
 
-The theme should work with any plugins you might use, however some might not work as intended. If you spot any that outright don't work well (whilst working on base discord), let me know and i will try to fix them. Some fixes for BD plugins are already included.
+The theme is designed to be compatible with most plugins you might use. However, some plugins may not work exactly as expected. If you notice any plugins that function properly without the theme, but encounter issues with the theme active, please let me know - I will do my best to adress the issues.
+
+Currently, the following plugins are supported with specific adjustments already included:
+- [GameActivityToggle](https://betterdiscord.app/plugin/GameActivityToggle) v1.3.6 by DevilBro
+- [ServerFolders](https://betterdiscord.app/plugin/ServerFolders) v7.4.2 by DevilBro
+- [BetterFolders](https://vencord.dev/plugins/BetterFolders) by Juby210, AutumnVN and Nuckyz
 
 # Work in progress
 
