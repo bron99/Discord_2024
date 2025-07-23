@@ -73,13 +73,19 @@
 
       > .recentsIcon_c99c29 {
         position: absolute;
-        top: calc(var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) + var(--space-8));
+        top: calc(
+          var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) +
+            var(--space-8)
+        );
         right: calc(32px + var(--space-xs) * 2 + 4px);
       }
 
       > .anchor_edefb8 {
         position: absolute;
-        top: calc(var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) + var(--space-8));
+        top: calc(
+          var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) +
+            var(--space-8)
+        );
         right: calc(var(--space-xs) + 4px);
 
         svg {
@@ -90,7 +96,10 @@
 
       > .button__85643 {
         position: absolute;
-        top: calc(var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) + var(--space-8));
+        top: calc(
+          var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) +
+            var(--space-8)
+        );
         right: calc(32px * 2 + var(--space-xs) * 3 + 4px);
       }
     }
@@ -281,7 +290,7 @@
     .folderGroup__48112 {
       --custom-folder-preview-padding: var(--space-6);
       --custom-folder-preview-gap: var(--space-4);
-      --custom-folder-color: #5865F2; /* might not be accurate */
+      --custom-folder-color: #5865f2; /* might not be accurate */
 
       .folderHeader__48112,
       .folderHeader__48112 > .folderButton__48112 {
@@ -583,7 +592,7 @@
         }
 
         .scrollerSpacer__36d07 {
-          height: var(--discord-2024-custom-scroller-spacer-height);
+          height: var(--discord-2024-custom-scroller-spacer-height, 30px);
         }
       }
 
@@ -663,8 +672,15 @@
 
     /* hover menu/quick menu */
     .popoverReactionHoverBar_f84418 {
-      background-color: var(--background-secondary, var(--background-nested-floating));
+      background-color: var(
+        --background-secondary,
+        var(--background-nested-floating)
+      );
     }
+  }
+
+  .markup__75297 blockquote {
+    color: var(--text-primary);
   }
 
   /* viewing old messages bottom bar */
@@ -968,16 +984,16 @@
 
   /* Vencord BetterFolders by Juby210, AutumnVN and Nuckyz*/
   .vc-betterFolders-sidebar-grid.base_c48ade .sidebar_c48ade {
-    grid-template-areas: 
-        "guilds betterFoldersSidebar notice"
-        "guilds betterFoldersSidebar sidebar"
-        "guilds betterFoldersSidebar panels";
+    grid-template-areas:
+      "guilds betterFoldersSidebar notice"
+      "guilds betterFoldersSidebar sidebar"
+      "guilds betterFoldersSidebar panels";
   }
 
   .vc-betterFolders-sidebar .wrapper_ef3116 {
     margin-bottom: 0;
 
-    .folderGuildsList__48112>:first-child {
+    .folderGuildsList__48112 > :first-child {
       margin-top: 4px;
     }
   }
