@@ -3,6 +3,7 @@
   --custom-guild-list-padding: var(--space-sm);
   --custom-channel-header-height: 48px;
   --custom-app-top-bar-height: 22px;
+  --custom-app-notice-bar-height: 38px;
   --custom-channel-textarea-text-area-height: 44px;
   --custom-member-list-width: 240px;
   --background-code: var(--background-secondary) !important;
@@ -42,16 +43,9 @@
     }
   }
 
-  /* microphone access denied popup */
-  .root__49fc1 {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
-    border-radius: var(--radius-xs);
-
-    .footer__49fc1 {
-      background-color: inherit;
-      border-radius: var(--radius-xs);
-    }
+  /* if a notice bar doesn't exists, remove the notice bar variable's value */
+  .base_c48ade:not(:has(.notice__6e2b9)) {
+    --custom-app-notice-bar-height: 0px;
   }
 
   /* top bar */
@@ -79,13 +73,19 @@
 
       > .recentsIcon_c99c29 {
         position: absolute;
-        top: calc(var(--custom-app-top-bar-height) + var(--space-8));
+        top: calc(
+          var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) +
+            var(--space-8)
+        );
         right: calc(32px + var(--space-xs) * 2 + 4px);
       }
 
       > .anchor_edefb8 {
         position: absolute;
-        top: calc(var(--custom-app-top-bar-height) + var(--space-8));
+        top: calc(
+          var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) +
+            var(--space-8)
+        );
         right: calc(var(--space-xs) + 4px);
 
         svg {
@@ -96,7 +96,10 @@
 
       > .button__85643 {
         position: absolute;
-        top: calc(var(--custom-app-top-bar-height) + var(--space-8));
+        top: calc(
+          var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) +
+            var(--space-8)
+        );
         right: calc(32px * 2 + var(--space-xs) * 3 + 4px);
       }
     }
@@ -119,9 +122,9 @@
   .sidebar_c48ade {
     display: grid;
     grid-template-areas:
+      "guilds notice"
       "guilds sidebar"
       "guilds panels";
-    grid-template-rows: [start] 1fr [panelsStart] min-content [end];
 
     > .guilds_c48ade {
       grid-area: guilds;
@@ -208,6 +211,10 @@
     background: var(--background-secondary);
   }
 
+  .reactionMe__23977 {
+    background-color: var(--message-reacted-background);
+  }
+
   .icon__24af7 {
     height: 24px;
     width: 24px;
@@ -283,7 +290,7 @@
     .folderGroup__48112 {
       --custom-folder-preview-padding: var(--space-6);
       --custom-folder-preview-gap: var(--space-4);
-      --custom-folder-color: #5865F2; /* might not be accurate */
+      --custom-folder-color: #5865f2; /* might not be accurate */
 
       .folderHeader__48112,
       .folderHeader__48112 > .folderButton__48112 {
@@ -585,7 +592,7 @@
         }
 
         .scrollerSpacer__36d07 {
-          height: var(--discord-2024-custom-scroller-spacer-height);
+          height: var(--discord-2024-custom-scroller-spacer-height, 30px);
         }
       }
 
@@ -601,7 +608,7 @@
           }
 
           .attachButton__0923f {
-            margin-left: var(-space-md);
+            margin-right: 0;
 
             svg {
               height: 24px;
@@ -626,7 +633,7 @@
         }
 
         > .base_b88801 {
-          color: var(--text-normal);
+          color: var(--text-normal, var(--text-secondary));
           padding-left: var(--space-xs);
           font-size: 14px;
         }
@@ -665,8 +672,15 @@
 
     /* hover menu/quick menu */
     .popoverReactionHoverBar_f84418 {
-      background-color: var(--background-secondary);
+      background-color: var(
+        --background-secondary,
+        var(--background-nested-floating)
+      );
     }
+  }
+
+  .markup__75297 blockquote {
+    color: var(--text-primary);
   }
 
   /* viewing old messages bottom bar */
@@ -925,50 +939,43 @@
     margin-right: 0;
   }
 
-  /* BD ServerFolders supported v7.4.1 by DevilBro */
-  .folderContentIsOpen_ac0584 .base_c48ade {
-    grid-template-areas:
-      "titleBar titleBar titleBar titleBar"
-      "notice notice notice notice"
-      "guildsList guildsList channelsList page";
-    grid-template-columns: [start] min-content [guildsEnd] min-content [guildsEnd] min-content [channelsEnd] 1fr [end];
-  }
-
+  /* BD ServerFolders supported v7.4.2 by DevilBro */
   .folderContentIsOpen_ac0584 .base_c48ade .sidebar_c48ade {
     grid-template-areas:
+      "guilds guildsFolderList notice"
       "guilds guildsFolderList sidebar"
       "guilds guildsFolderList panels";
   }
 
   .content_ac0584 {
     margin-top: 4px;
-  }
 
-  .content_ac0584.closed_ac0584 {
-    display: none;
-  }
+    &.closed_ac0584 {
+      display: none;
+    }
 
-  .content_ac0584 .wrapper_cc5dd2 {
-    width: var(--guildbar-avatar-size) !important;
-    height: var(--guildbar-avatar-size) !important;
+    .wrapper_cc5dd2 {
+      width: var(--guildbar-avatar-size) !important;
+      height: var(--guildbar-avatar-size) !important;
 
-    > svg {
-      inset: auto;
-      contain: none;
+      > svg {
+        inset: auto;
+        contain: none;
 
-      > foreignObject {
-        mask: none;
-        overflow: visible;
-        x: -4;
-        y: -4;
+        > foreignObject {
+          mask: none;
+          overflow: visible;
+          x: -4;
+          y: -4;
 
-        > .wrapper__6e9f8 {
-          border-radius: var(--radius-round);
-          overflow: hidden;
-          transition: border-radius 0.2s;
+          > .wrapper__6e9f8 {
+            border-radius: var(--radius-round);
+            overflow: hidden;
+            transition: border-radius 0.2s;
 
-          &.selected__6e9f8 {
-            border-radius: 15px;
+            &.selected__6e9f8 {
+              border-radius: 15px;
+            }
           }
         }
       }
@@ -994,21 +1001,6 @@
       &.selected_b3f026 {
         background-color: var(--background-modifier-selected);
       }
-
-	  &.addFriend__133bf {
-        background-color: var(--status-positive-background);
-        color: var(--status-positive-text);
-
-		&:hover {
-          background-color: var(--status-positive-background);
-          color: var(--status-positive-text);
-		}
-
-        &[aria-selected=true] {
-          background-color: transparent;
-          color: var(--text-positive);
-        }
-      }
     }
   }
 
@@ -1016,6 +1008,21 @@
   button, span {
     &.button__67645.enabled__67645:hover {
       background-color: var(--background-modifier-selected);
+    }
+  }
+
+  .vc-betterFolders-sidebar-grid.base_c48ade .sidebar_c48ade {
+    grid-template-areas:
+      "guilds betterFoldersSidebar notice"
+      "guilds betterFoldersSidebar sidebar"
+      "guilds betterFoldersSidebar panels";
+  }
+
+  .vc-betterFolders-sidebar .wrapper_ef3116 {
+    margin-bottom: 0;
+
+    .folderGuildsList__48112 > :first-child {
+      margin-top: 4px;
     }
   }
 }
