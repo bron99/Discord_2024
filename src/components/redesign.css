@@ -112,7 +112,7 @@
 
   /* only if update exists, move toolbar, there should be a better way to do this i think */
   .base_c48ade:has(.bar_c38106 > .trailing_c38106 > .button__85643) {
-    --custom-toolbar-icon-count: var(--custom-toolbar-icon-count) + 1;
+    --custom-toolbar-icon-count: 3;
   }
 
   /* placement of elements on left sidebar (servers/channels/panels) */
