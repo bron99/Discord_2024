@@ -126,6 +126,10 @@
       "guilds sidebar"
       "guilds panels";
 
+    &.hidden_c48ade {
+      display: none;
+    }
+
     > .guilds_c48ade {
       grid-area: guilds;
       margin-bottom: 0;
