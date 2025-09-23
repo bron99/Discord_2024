@@ -80,6 +80,15 @@
         right: calc(32px + var(--space-xs) * 2 + 4px);
       }
 
+      > .clickable_c99c29 {
+        position: absolute;
+        top: calc(
+          var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) +
+            var(--space-12)
+        );
+        right: calc(32px + var(--space-xs) * 2);
+      }
+
       > .anchor_edefb8 {
         position: absolute;
         top: calc(
