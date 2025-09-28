@@ -13,11 +13,7 @@
 .visual-refresh {
   /* Light/Ash only theme changes */
   &.theme-light:not(html.custom-theme-background),
-  &.theme-dark:not(
-      html.custom-theme-background,
-      html.theme-darker,
-      html.theme-midnight
-    ) {
+  &.theme-dark:not(html.custom-theme-background, html.theme-darker, html.theme-midnight) {
     .base_c48ade,
     .guilds_c48ade {
       background: var(--background-tertiary);
@@ -50,7 +46,28 @@
 
   /* top bar */
   .base_c48ade > .bar_c38106 {
-    padding-left: 0;
+    justify-content: flex-end;
+    gap: 0;
+
+    /* back/forward buttons */
+    > .leading_c38106 {
+      .backForwardButtons__63abb {
+        --custom-bf-button-radius: var(--radius-none);
+        --custom-bf-outer-padding: 5px;
+        --custom-bf-inner-padding: 5px;
+        justify-content: flex-end;
+        gap: 0;
+      }
+
+      .backForwardButtons__63abb .button__63abb {
+        height: 22px;
+      }
+
+      .backForwardButtons__63abb .button__63abb:not(.disabled__63abb):hover {
+        background-color: var(--background-modifier-hover);
+        color: var(--interactive-hover);
+      }
+    }
 
     /* add old discord text logo */
     > .title_c38106 {
@@ -67,11 +84,10 @@
     }
 
     > .trailing_c38106 {
-      right: 0;
-      position: absolute;
-      z-index: 102;
+      z-index: 102;   /* TO BE CHANGED */
 
-      > .recentsIcon_c99c29 {
+      /* inbox */
+      > .clickable_c99c29 {
         position: absolute;
         top: calc(
           var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) +
@@ -80,6 +96,7 @@
         right: calc(32px + var(--space-xs) * 2 + 4px);
       }
 
+      /* help */
       > .anchor_edefb8 {
         position: absolute;
         top: calc(
@@ -94,6 +111,7 @@
         }
       }
 
+      /* update */
       > .button__85643 {
         position: absolute;
         top: calc(
@@ -982,7 +1000,7 @@
     }
   }
 
-  /* Vencord BetterFolders by Juby210, AutumnVN and Nuckyz*/
+  /* Vencord BetterFolders by Juby210, AutumnVN and Nuckyz */
   .vc-betterFolders-sidebar-grid.base_c48ade .sidebar_c48ade {
     grid-template-areas:
       "guilds betterFoldersSidebar notice"
