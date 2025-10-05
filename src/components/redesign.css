@@ -696,11 +696,36 @@
       );
     }
   }
+  
+  /* fix bot text */
+  .px__82f07 .botText__82f07 {
+    font-size: 0;
+    visibility: hidden;
+    height: 16px;
 
+    &:before {
+      font-size: 12px;
+      content: "BOT";
+      visibility: visible;
+    }
+  }
+  
+  .rem__82f07:not(.botTagOP__82f07, .botTagRemix__82f07) .botText__82f07 {
+    font-size: 0;
+    visibility: hidden;
+    height: .9375rem;
+
+    &:before {
+      font-size: .8rem;
+      content: "BOT";
+      visibility: visible;
+    }
+  }
+  
   .markup__75297 blockquote {
     color: var(--text-primary);
   }
-
+  
   /* viewing old messages bottom bar */
   .bottomBar__0f481 {
     background-color: color-mix(
