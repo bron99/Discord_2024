@@ -617,10 +617,13 @@
       > .form_f75fb0 {
         padding-left: var(--space-md);
         padding-right: var(--space-md);
-        margin-top: -6px;
+
+        > .inTextChannel_b88801 {
+          bottom: 0;
+        }
 
         .channelTextArea_f75fb0 {
-          margin-bottom: var(--space-md);
+          margin-bottom: var(--space-xl);
         }
 
         .channelTextArea__74017 {
@@ -723,7 +726,7 @@
     width: auto;
     box-shadow: var(--shadow-ledge);
     border-radius: 8px 8px 0 0;
-    bottom: 0;
+    bottom: var(--space-sm);
     margin: 0;
 
     .button__201d5 {
