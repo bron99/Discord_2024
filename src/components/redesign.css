@@ -7,7 +7,7 @@
   --custom-channel-textarea-text-area-height: 44px;
   --custom-member-list-width: 240px;
   --background-code: var(--background-secondary) !important;
-  --chat-input-icon-size: 24px;
+  --chat-input-icon-size: 20px;
 }
 
 .visual-refresh {
@@ -618,6 +618,15 @@
         padding-left: var(--space-md);
         padding-right: var(--space-md);
 
+        > .inTextChannel_b88801 {
+          top: unset;
+          bottom: 0;
+        }
+
+        .channelTextArea_f75fb0 {
+          margin-bottom: var(--space-xl);
+        }
+
         .channelTextArea__74017 {
           border: none;
 
@@ -625,12 +634,16 @@
             margin-left: 0;
           }
 
-          .attachButton__0923f {
-            margin-right: 0;
+          .attachWrapper__0923f {
+            padding: var(--space-6) calc(var(--space-md) - 6px);
 
-            svg {
-              height: 24px;
-              width: 24px;
+            .attachButton__0923f {
+              margin-right: 0;
+
+              svg {
+                height: var(--chat-input-icon-size);
+                width: var(--chat-input-icon-size);
+              }
             }
           }
 
@@ -714,7 +727,7 @@
     width: auto;
     box-shadow: var(--shadow-ledge);
     border-radius: 8px 8px 0 0;
-    bottom: 0;
+    bottom: var(--space-sm);
     margin: 0;
 
     .button__201d5 {
