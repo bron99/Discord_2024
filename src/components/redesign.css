@@ -7,7 +7,8 @@
   --custom-channel-textarea-text-area-height: 44px;
   --custom-member-list-width: 240px;
   --background-code: var(--background-secondary) !important;
-  --chat-input-icon-size: 24px;
+  --chat-input-icon-size: 20px;
+  --custom-chat-input-margin-bottom: 16px;
 }
 
 .visual-refresh {
@@ -625,12 +626,16 @@
             margin-left: 0;
           }
 
-          .attachButton__0923f {
-            margin-right: 0;
+          .attachWrapper__0923f {
+            padding: var(--space-6) calc(var(--space-md) - 6px);
 
-            svg {
-              height: 24px;
-              width: 24px;
+            .attachButton__0923f {
+              margin-right: 0;
+
+              svg {
+                height: var(--chat-input-icon-size);
+                width: var(--chat-input-icon-size);
+              }
             }
           }
 
