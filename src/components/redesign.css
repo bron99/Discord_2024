@@ -619,6 +619,7 @@
         padding-right: var(--space-md);
 
         > .inTextChannel_b88801 {
+          top: unset;
           bottom: 0;
         }
 
