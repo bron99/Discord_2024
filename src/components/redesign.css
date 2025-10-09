@@ -6,6 +6,7 @@
   --custom-app-notice-bar-height: 38px;
   --custom-channel-textarea-text-area-height: 44px;
   --custom-member-list-width: 240px;
+  --custom-toolbar-icon-count: 2;
   --background-code: var(--background-secondary) !important;
   --chat-input-icon-size: 24px;
 }
@@ -131,9 +132,8 @@
   }
 
   /* only if update exists, move toolbar, there should be a better way to do this i think */
-  .base_c48ade:has(.bar_c38106 > .trailing_c38106 > .button__85643)
-    .toolbar__9293f {
-    margin-right: calc(32px * 3 + var(--space-xs) * 3 + 4px);
+  .base_c48ade:has(.bar_c38106 > .trailing_c38106 > .button__85643) {
+    --custom-toolbar-icon-count: 3;
   }
 
   /* placement of elements on left sidebar (servers/channels/panels) */
@@ -530,7 +530,7 @@
       box-shadow: var(--shadow-ledge);
 
       .toolbar__9293f {
-        margin-right: calc(32px * 2 + var(--space-xs) * 2 + 4px);
+        margin-right: calc(32px * var(--custom-toolbar-icon-count) + var(--space-xs) * var(--custom-toolbar-icon-count) + 4px);
 
         .inviteToolbar__133bf,
         .libraryFilter__3fb48 {
@@ -694,6 +694,13 @@
         --background-secondary,
         var(--background-nested-floating)
       );
+    }
+
+    /* fix toolbar margin for voice channel text chat layer */
+    .chatLayerWrapper__01ae2 {
+      .toolbar__9293f {
+        margin-right: revert;
+      }
     }
   }
 
