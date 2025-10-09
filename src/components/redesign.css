@@ -618,6 +618,7 @@
       > .form_f75fb0 {
         padding-left: var(--space-md);
         padding-right: var(--space-md);
+		margin-top: -6px;
 
         .channelTextArea__74017 {
           border: none;
