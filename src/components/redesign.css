@@ -298,7 +298,7 @@
             }
 
             &.selected__6e9f8 {
-              border-radius: 16.5449px;
+              border-radius: 16px;
               
               .childWrapper__6e9f8 {
                 background: var(--brand-500);
@@ -314,7 +314,7 @@
             background: var(--background-primary);
 
             &.selected__5bc7e {
-              border-radius: 16.5449px;
+              border-radius: 16px;
               color: var(--white-500);
               background: var(--green-360);
             }
@@ -1056,7 +1056,7 @@
             }
 
             &.selected__6e9f8 {
-              border-radius: 16.5449px;
+              border-radius: 16px;
 
               .childWrapper__6e9f8 {
                 background: var(--brand-500);
