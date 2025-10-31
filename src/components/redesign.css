@@ -14,8 +14,8 @@
   /* Light/Ash only theme changes */
   &.theme-light:not(html.custom-theme-background),
   &.theme-dark:not(html.custom-theme-background, html.theme-darker, html.theme-midnight) {
-    .base_c48ade,
-    .guilds_c48ade {
+    .base__5e434,
+    .guilds__5e434 {
       background: var(--background-tertiary);
     }
 
@@ -34,18 +34,23 @@
   /* remove top bar on web/linux */
   &.platform-web,
   &.platform-linux {
-    .base_c48ade {
+    .base__5e434 {
       --custom-app-top-bar-height: 0px;
     }
   }
 
+  /* round channels list on windows */
+  &.platform-win .sidebarList__5e434 {
+    border-radius: 8px 0 0 !important;
+  }
+
   /* if a notice bar doesn't exists, remove the notice bar variable's value */
-  .base_c48ade:not(:has(.notice__6e2b9)) {
+  .base__5e434:not(:has(.notice__6e2b9)) {
     --custom-app-notice-bar-height: 0px;
   }
 
   /* top bar */
-  .base_c48ade > .bar_c38106 {
+  .base__5e434 > .bar_c38106 {
     justify-content: flex-end;
     gap: 0;
 
@@ -78,7 +83,7 @@
       top: 1px;
 
       /* remove redundant server name/icon */
-      > .title_bb0d86 {
+      > .title_edbb22 {
         display: none;
       }
     }
@@ -91,9 +96,9 @@
         position: absolute;
         top: calc(
           var(--custom-app-notice-bar-height) + var(--custom-app-top-bar-height) +
-            var(--space-8)
+            var(--space-12)
         );
-        right: calc(32px + var(--space-xs) * 2 + 4px);
+        right: calc(32px + var(--space-xs) * 2);
       }
 
       /* help */
@@ -131,32 +136,33 @@
   }
 
   /* only if update exists, move toolbar, there should be a better way to do this i think */
-  .base_c48ade:has(.bar_c38106 > .trailing_c38106 > .button__85643)
+  .base__5e434:has(.bar_c38106 > .trailing_c38106 > .button__85643)
     .toolbar__9293f {
     margin-right: calc(32px * 3 + var(--space-xs) * 3 + 4px);
   }
 
   /* placement of elements on left sidebar (servers/channels/panels) */
-  .sidebar_c48ade {
+  .sidebar__5e434 {
     display: grid;
     grid-template-areas:
       "guilds notice"
       "guilds sidebar"
       "guilds panels";
 
-    > .guilds_c48ade {
+    > .guilds__5e434 {
       grid-area: guilds;
       margin-bottom: 0;
     }
 
-    > .sidebarList_c48ade {
+    > .sidebarList__5e434 {
+      border-radius: 0;
       grid-area: sidebar;
       width: calc(
         var(--custom-guild-sidebar-width) - 24px
       ); /* default and minimum: 240px */
     }
 
-    > .panels_c48ade {
+    > .panels__5e434 {
       grid-area: panels;
       width: 100%;
       left: 0;
@@ -252,7 +258,7 @@
   }
 
   /***************************************************************** SERVERS **********************************************************************/
-  .guilds_c48ade .stack_dbd263 {
+  .guilds__5e434 .stack_dbd263 {
     .tutorialContainer__1f388 {
       padding-top: 4px;
     }
@@ -283,18 +289,35 @@
           y: -4;
 
           > .wrapper__6e9f8 {
-            border-radius: var(--radius-round);
+            border-radius: 24px;
             overflow: hidden;
-            transition: border-radius 0.2s;
+            transition: border-radius 0.2s ease;
+
+            .childWrapper__6e9f8 {
+              background: var(--background-primary);
+            }
 
             &.selected__6e9f8 {
-              border-radius: 15px;
+              border-radius: 16px;
+              
+              .childWrapper__6e9f8 {
+                background: var(--brand-500);
+                color: var(--white-500);
+              }
             }
           }
 
           > .circleIconButton__5bc7e {
-            border-radius: var(--radius-round);
+            border-radius: 24px;
             overflow: hidden;
+            color: var(--green-360);
+            background: var(--background-primary);
+
+            &.selected__5bc7e {
+              border-radius: 16px;
+              color: var(--white-500);
+              background: var(--green-360);
+            }
           }
         }
       }
@@ -328,6 +351,11 @@
           border-radius: var(--radius-round);
         }
       }
+
+      .folderGroupBackground__48112 {
+        background: var(--background-secondary);
+        border: none;
+      }
     }
 
     /* ping/voice icons */
@@ -346,7 +374,7 @@
   }
 
   /***************************************************************** CHANNELS/DMS *****************************************************************/
-  .sidebarList_c48ade {
+  .sidebarList__5e434 {
     border: 0;
 
     .hasBanner_f37cb1 {
@@ -857,13 +885,13 @@
   }
 
   /***************************************************************** PANELS ***********************************************************************/
-  .panels_c48ade {
+  .panels__5e434 {
     background-color: var(--background-secondary-alt);
     border: none;
     border-radius: var(--radius-none);
 
     /* activity panel */
-    > .activityPanel_c48ade {
+    > .activityPanel__5e434 {
       background: unset;
       padding: var(--space-xxs) var(--space-xs);
       border-radius: var(--radius-none);
@@ -990,7 +1018,7 @@
   }
 
   /* BD ServerFolders supported v7.4.2 by DevilBro */
-  .folderContentIsOpen_ac0584 .base_c48ade .sidebar_c48ade {
+  .folderContentIsOpen_ac0584 .base__5e434 .sidebar__5e434 {
     grid-template-areas:
       "guilds guildsFolderList notice"
       "guilds guildsFolderList sidebar"
@@ -1019,12 +1047,21 @@
           y: -4;
 
           > .wrapper__6e9f8 {
-            border-radius: var(--radius-round);
+            border-radius: 24px;
             overflow: hidden;
-            transition: border-radius 0.2s;
+            transition: border-radius 0.2s ease;
+
+            .childWrapper__6e9f8 {
+              background: var(--background-primary);
+            }
 
             &.selected__6e9f8 {
-              border-radius: 15px;
+              border-radius: 16px;
+
+              .childWrapper__6e9f8 {
+                background: var(--brand-500);
+                color: var(--white-500);
+              }
             }
           }
         }
@@ -1033,7 +1070,7 @@
   }
 
   /* Vencord BetterFolders by Juby210, AutumnVN and Nuckyz */
-  .vc-betterFolders-sidebar-grid.base_c48ade .sidebar_c48ade {
+  .vc-betterFolders-sidebar-grid.base__5e434 .sidebar__5e434 {
     grid-template-areas:
       "guilds betterFoldersSidebar notice"
       "guilds betterFoldersSidebar sidebar"
