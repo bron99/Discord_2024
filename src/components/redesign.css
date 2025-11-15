@@ -278,6 +278,11 @@
       width: var(--guildbar-avatar-size) !important;
       height: var(--guildbar-avatar-size) !important;
 
+      /* move servers 1px down on click */
+      &:has(.icon__6e9f8, .ring_c9fddf):active {
+        top: 1px;
+      }
+
       > svg {
         inset: auto;
         contain: none;
@@ -1035,6 +1040,11 @@
     .wrapper_cc5dd2 {
       width: var(--guildbar-avatar-size) !important;
       height: var(--guildbar-avatar-size) !important;
+
+      /* move servers 1px down on click */
+      &:has(.icon__6e9f8):active {
+        top: 1px;
+      }
 
       > svg {
         inset: auto;
