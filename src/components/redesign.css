@@ -288,7 +288,7 @@
           x: -4;
           y: -4;
 
-          > .wrapper__6e9f8 {
+          .wrapper__6e9f8 {
             border-radius: 24px;
             overflow: hidden;
             transition: border-radius 0.2s ease;
@@ -1046,7 +1046,7 @@
           x: -4;
           y: -4;
 
-          > .wrapper__6e9f8 {
+          .wrapper__6e9f8 {
             border-radius: 24px;
             overflow: hidden;
             transition: border-radius 0.2s ease;
