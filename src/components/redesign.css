@@ -542,6 +542,29 @@
     }
   }
 
+  /* fix icon badge position and size for notifications */
+  .iconWrapper__9293f:has(> .iconBadge__9293f) {
+    svg.svg__2338f {
+      height: 24px;
+      width: 24px;
+      overflow: visible;
+
+      svg.icon__9293f {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .iconBadge__9293f {
+      height: 9px;
+      width: 9px;
+    }
+
+    .iconBadgeBottom__9293f {
+      --custom-icon-offset: calc((var(--chat-input-icon-size) - 15px) / 2)
+    }
+  }
+
   /***************************************************************** CHAT *************************************************************************/
   /* chat/forum post/friends/library/nitro/shop */
   .chat_f75fb0,
