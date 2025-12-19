@@ -149,6 +149,10 @@
       "guilds sidebar"
       "guilds panels";
 
+    &._5e434347c823b592-hidden {
+      display: none;
+    }
+
     > ._5e434347c823b592-guilds {
       grid-area: guilds;
       margin-bottom: 0;
@@ -542,6 +546,29 @@
     }
   }
 
+  /* fix icon badge position and size for notifications */
+  ._9293f6b2fc12398a-iconWrapper:has(> ._9293f6b2fc12398a-iconBadge) {
+    svg._2338f50c3988e5ec-svg {
+      height: 24px;
+      width: 24px;
+      overflow: visible;
+
+      svg._9293f6b2fc12398a-icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    ._9293f6b2fc12398a-iconBadge {
+      height: 9px;
+      width: 9px;
+    }
+
+    ._9293f6b2fc12398a-iconBadgeBottom {
+      --custom-icon-offset: calc((var(--chat-input-icon-size) - 15px) / 2)
+    }
+  }
+
   /***************************************************************** CHAT *************************************************************************/
   /* chat/forum post/friends/library/nitro/shop */
   .f75fb00fb7356cbe-chat,
@@ -564,6 +591,21 @@
         ._3fb48a36faa8fdf6-libraryFilter {
           padding-right: 0;
           margin-right: var(--spacing-4);
+
+          &._133bf5eea8e33a34-inviteToolbar {
+            position: relative;
+            padding-right: 12px;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: var(--space-4);
+              right: 0;
+              width: 1px;
+              height: var(--space-24);
+              background-color: var(--border-subtle);
+            }
+          }
         }
 
         ._974928fe84ca9647-searchBar {
@@ -594,6 +636,42 @@
         ._974928fe84ca9647-focused {
           ._974928fe84ca9647-searchBar {
             width: 281px;
+          }
+        }
+      }
+    }
+
+    /* top bar on full friends list page, title area in servers etc */
+    ._9293f6b2fc12398a-upperContainer {
+      ._9293f6b2fc12398a-children:has(._9293f6b2fc12398a-dot) {
+        /* remove the dot on the friend's list top bar */
+        ._9293f6b2fc12398a-dot {
+          display: none;
+        }
+
+        ._9293f6b2fc12398a-titleWrapper {
+          position: relative;
+          padding-right: 12px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: -2px;
+            right: 0;
+            width: 1px;
+            height: var(--space-24);
+            background-color: var(--border-subtle);
+          }
+        }
+
+        ._133bf5eea8e33a34-tabBar {
+          display: flex;
+          align-items: center;
+
+          ._133bf5eea8e33a34-item {
+            min-height: 24px;
+            height: 24px;
+            padding: 2px 8px;
           }
         }
       }
