@@ -422,8 +422,8 @@
       }
   
       .channel_zln_tS:not(.dm_zln_tS) svg {
-        width: 24px;
-        height: 24px;
+        /* scale instead of resizing, changing the size breaks the DM list (React error #185) */
+        transform: scale(1.2);
       }
   
       .scroller_ysO7Gy,
